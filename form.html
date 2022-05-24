@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> FORMS</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            div.relative {
+              position: relative;
+              width: 300px;
+              height: 200px;
+              border: 3px solid orange;
+            } 
+            
+            div.absolute {
+              position: absolute;
+              top: 80px;
+              right: 0;
+              width: 200px;
+              height: 100px;
+              border: 3px solid #73AD21;
+            }
+            </style>
+    </head>
+    <body>
+        <div>
+            
+            <h2 id="top"><u><strong>ONLINE APPLICATION FORM</u></strong></h2>
+            
+                <form autocomplete="on">
+                    <fieldset>
+                        <legend>Personal details</legend>
+                <label for="fname">FIRST NAME</label>
+                <input type="text" id="firstname" placeholder="your name" autofocus><br><br>
+                <label for="lname">LAST NAME</label>
+                <input type="text" id="lastname" placeholder="your name" maxlength="10" size="10">
+                <br><br>
+                <label for="gender">GENDER</label>
+                <input type="radio" id="gender" name="gender" value="male">male
+                <input type="radio" id="gender" name="gender" value="female">female<br><br>
+                <label for="dob">DOB</label>
+                <input type="date" id="dob"><br><br>
+                <label for="languages">LANGUAGES</label>
+                <input type="checkbox" id="languages" name="languages" value="c">C
+                <input type="checkbox" id="languages" name="languages" value="c++">C++
+                <input type="checkbox" id="languages" name="languages" value="java">java
+                <input type="checkbox" id="languages" name="languages" value="java">others<br><br>
+                <label for="department">DEPARTMENT</label>
+                <select id="state" name="state">
+                <option value="it">IT</option>
+                <option value="ece">ece</option>
+                <option value="eee">eee</option>
+                <option value="cs">cs</option>
+                </select><br><br>
+               <label for="upload resume">upload resume</label>
+                <input type="file" autocomplete="off"><br>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+                    </fieldset>
+                    
+
+                </form>
+        </div>
+        <section>
+            <h3>Note</h3>
+            <p>Please print or type on line the information to be filled in the form. It is important to
+                 fill in all fields of the form,if not applicable, please state so..</p>
+                 <div class="relative">Please fill in for the whole document never using capital letters, 
+                     except in the cases strictly provided where an initial capital is necessary
+                     
+                    <div class="absolute">done</div>
+                  </div>
+                 <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48" >
+                       
+        </section>
+    </body>
+</html>
+
